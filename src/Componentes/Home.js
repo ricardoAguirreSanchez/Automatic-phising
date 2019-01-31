@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-//import chromeApi from 'chrome-extension-async';
 
 class Home extends Component {
     

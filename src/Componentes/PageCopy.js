@@ -24,7 +24,7 @@ class PageCopy extends Component {
     }
     
     componentDidMount () {
-        
+        debugger;
         window.cambioInput = this.cambioInput;
         let url = this.props.location.pathname + this.props.location.search
         
@@ -33,8 +33,11 @@ class PageCopy extends Component {
         logger.info('El url a consumir por axios es: ' + urlAClonar)
                 
         const principal = this;
-        axios.get(urlAClonar)
-        .then(function (response) {
+
+        axios.post('http://localhost:8080/page', {
+            url: urlAClonar
+          })
+          .then(function (response) {
             //guardamos el response en el state
             logger.info('Recibimos el response correctamente.');
             debugger;
@@ -43,10 +46,26 @@ class PageCopy extends Component {
                 boddy: response.data,
                 url : urlAClonar
             })
-        })
-        .catch(function (error) {
+          })
+          .catch(function (error) {
             logger.error(error);
-        });
+          });
+
+
+        // axios.get(urlAClonar)
+        // .then(function (response) {
+        //     //guardamos el response en el state
+        //     logger.info('Recibimos el response correctamente.');
+        //     debugger;
+        //     principal.setState({
+        //         ...principal.state,
+        //         boddy: response.data,
+        //         url : urlAClonar
+        //     })
+        // })
+        // .catch(function (error) {
+        //     logger.error(error);
+        // });
     }
 
     componentWillUnmount() {

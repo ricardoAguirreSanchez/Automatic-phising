@@ -51,21 +51,6 @@ class PageCopy extends Component {
             logger.error(error);
           });
 
-
-        // axios.get(urlAClonar)
-        // .then(function (response) {
-        //     //guardamos el response en el state
-        //     logger.info('Recibimos el response correctamente.');
-        //     debugger;
-        //     principal.setState({
-        //         ...principal.state,
-        //         boddy: response.data,
-        //         url : urlAClonar
-        //     })
-        // })
-        // .catch(function (error) {
-        //     logger.error(error);
-        // });
     }
 
     componentWillUnmount() {
@@ -76,11 +61,23 @@ class PageCopy extends Component {
     cambioInput(e){
         let id = e.id;
         let value = e.value;
-        this.setState({
-            ...this.state,
-            hasmapState: this.state.hasmapState.set(id,value),
-        })
-        logger.info(this.state.url + " se ingreso en el input id:" + id + " el valor:" + value);
+        
+        axios.post('http://localhost:8080/logger', {
+            url: this.state.url,
+            idInput : id,
+            contenido : value
+
+          })
+          .then(function (response) {
+            //guardamos el response en el state
+            if (response.data === "Registrado!")
+            logger.info('Cambio guardado.');
+            
+          })
+          .catch(function (error) {
+            logger.error(error);
+          });
+
     }
 
     //modifico el html del response, para todo input, si tiene id lo dejo, si no tiene le seteo un id y agrego el evento onChange

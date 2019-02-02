@@ -1,0 +1,3 @@
+[submodule "server/webpage2html"]
+	path = server/webpage2html
+	url = https://github.com/zTrix/webpage2html

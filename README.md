@@ -7,13 +7,17 @@ Proyecto para clonar paginas a partir de una url
 
 
 Etapas del proyecto:
-1.- Clonado de paginas a partir del response usando la url (sin el https://)
-2.- Logear los datos de los inputs que se ingresan al momento de usar la pagina clonada (por ahora en la consola del          navegador)
-3.- Guardar el historial de log en firebase (para evitar tener un backend) o tener un backend con golang
-4.- Ver la posibilidad de obtener los estilos para tener una mejor visualizacion de la pagina
-5.- Mejorar las exepciones
-6.- Agregar gift de cargando...
-7.- Agregar semaforos para el manejo del script y los log en el servidor
+<ol>
+  <li>Clonado de paginas a partir del response usando la url (sin el https://)</li>
+  <li>Logear los datos de los inputs que se ingresan al momento de usar la pagina clonada (por ahora en la consola del          navegador)</li>
+  <li>Guardar el historial de log en firebase (para evitar tener un backend) o tener un backend con golang</li>
+  
+  <li>Mejorar las exepciones</li>
+  <li>Agregar gift de cargando...</li>
+  <li>Guardar el historial de log en firebase (para evitar tener un backend) o tener un backend con golang</li>
+  
+  <li>Agregar semaforos para el manejo del script y los log en el servidor</li>
+</ol>
 
 Pasos:
 1 .- A partir de la url 

@@ -20,7 +20,7 @@ Etapas del proyecto:
 </ol>
 
 <h2>Pasos:</h2>
-1 .- A partir de la url 
+1 .- Copiar cualquier url a continuación del localhost
 
 ### http://localhost:3000/<pagina sin el https//>
 
@@ -30,6 +30,6 @@ Etapas del proyecto:
 
 ![Alt text](capturas/captura_dato_input.png?raw=true "Title")
 
-3.- Ver en el servidor un archivo log.
+3.- Ver en el servidor un archivo log que llevara el registro de cada cambio
 
 ![Alt text](capturas/captura_log.png?raw=true "Title")

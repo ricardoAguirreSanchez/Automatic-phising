@@ -14,10 +14,7 @@ Pasos:
 
 ### http://localhost:3000/<pagina sin el https//>
 
-### Ejemplo http://localhost:3000/stackoverflow.com/questions/50420248/how-to-parse-a-string-containing-html-to-react-components#
-
-
-Se debe mostrar la version clonada (posiblemente algunas carezcan de estilos).
+![Alt text](relative/path/to/img.jpg?raw=true "Title")
 
 2.- Ingresar algunos caracteres en los inputs que se encuentren.
 

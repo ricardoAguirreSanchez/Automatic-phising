@@ -1,7 +1,10 @@
 Proyecto para clonar paginas a partir de una url
 
-Frontend con reactjs
-Backend con Golang
+<ul>
+  <li>Frontend con reactjs</li>
+  <li>Backend con Golang</li>
+</ul>
+
 
 Etapas del proyecto:
 1.- Clonado de paginas a partir del response usando la url (sin el https://)
@@ -21,4 +24,8 @@ Pasos:
 
 2.- Ingresar algunos caracteres en los inputs que se encuentren.
 
-3.- Ver en la consola que se este loggeando el registro de dichos valores.
+![Alt text](capturas/captura_dato_input.png?raw=true "Title")
+
+3.- Ver en el servidor un archivo log.
+
+![Alt text](capturas/captura_log.png?raw=true "Title")

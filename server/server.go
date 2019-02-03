@@ -40,7 +40,7 @@ func PostObtenerFileHTML(w http.ResponseWriter , r *http.Request){
 
 		log.Println("Recibi la URL: ", urlRecibido.Url)
 		//logica para ejecutar el script
-		comando := "./buscarelhtml.sh " +  urlRecibido.Url
+		comando := "./buscarelhtml.sh " +  urlRecibido.Url +" "+nameHTML
 		log.Println("Ejecutando el script:",comando)
 		
 		cmd := exec.Command("./buscarelhtml.sh", urlRecibido.Url, nameHTML)

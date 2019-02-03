@@ -19,7 +19,7 @@ Etapas del proyecto:
   <li>Agregar semaforos para el manejo del script y los log en el servidor</li>
 </ol>
 
-Pasos:
+<h2>Pasos:</h2>
 1 .- A partir de la url 
 
 ### http://localhost:3000/<pagina sin el https//>

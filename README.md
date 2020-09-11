@@ -2,7 +2,7 @@ Proyecto para clonar paginas a partir de una url
 
 <ul>
   <li>Frontend con reactjs</li>
-  <li>Backend con Golang</li>
+  <li>Backend con Golang (pendiente)</li>
 </ul>
 
 
@@ -12,7 +12,7 @@ Etapas del proyecto:
   <li>Logear los datos de los inputs que se ingresan al momento de usar la pagina clonada (por ahora en la consola del          navegador)</li>
   <li>Guardar el historial de log en firebase (para evitar tener un backend) o tener un backend con golang</li>
   
-  <li>Mejorar las exepciones</li>
+  <li>Mejorar las excepciones</li>
   <li>Agregar gift de cargando...</li>
   <li>Guardar el historial de log en firebase (para evitar tener un backend) o tener un backend con golang</li>
   
